@@ -32,3 +32,45 @@ This Hangman project was more than just a game- it was a hands-on journey throug
 Building both a Command Line Interface (CLI) and a Graphical User Interface (GUI) version allowed to explore different user interaction models and integrating a visual timer using Tkinter’s after () method helped to get into event driven tests. Incorporating static analysis tools like flake8 and pylint helped elevating code quality and align with professional standards.
 The game development process, it provided the understanding of modular design, user experience, and the value of clean documentation. More functionality like scoring system, better GUI with Tkinter’s advance features and providing hint system can be implemented in future.
 
+Game Requirements:
+Python 3.7+
+Tkinter (comes pre-installed with Python)
+
+Files Included:
+gui.py – Graphical version of the game
+
+game.py – Core game logic
+
+dictionary.py – Word/phrase generator
+
+timer.py – Countdown timer for command line interface
+
+main.py – Command-line version of the game
+
+Unit tests: test_game.py, test_timer.py
+
+How to Play
+GUI Version:
+Run the game: python gui.py
+
+Choose your difficulty level:
+Basic: Single words
+Intermediate: Phrases with spaces
+
+Enter one letter at a time in the input box.
+You have 6 lives and 15 seconds per guess.
+If time runs out, a life is deducted automatically.
+Win by guessing all letters before lives run out.
+
+CLI Version:
+Run the game: python main.py
+Type your guesses in the terminal.
+You have 15 seconds per guess (enforced by inputimeout)
+Game ends when you win or lose all lives.
+
+Testing the Game
+To run automated unit tests:
+python -m unittest test_game.py
+python -m unittest test_timer.py
+
+These tests validate: Word display logic, Guess handling, Win/loss conditions, Timer expiration behavior
